@@ -13,7 +13,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<testng.suiteFile>testng.xml</testng.suiteFile>
+		<testng.suiteFile>TestNG.xml</testng.suiteFile>
 		<allure-testng-version>2.13.9</allure-testng-version>
 	</properties>
 
@@ -55,13 +55,34 @@
 		</dependency>
 	</dependencies>
 
-	<!-- <build> <plugins> <plugin> <groupId>org.apache.maven.plugins</groupId> 
-		<artifactId>maven-surefire-plugin</artifactId> <version>2.22.1</version> 
-		<configuration> <properties> <property> <name>usedefaultlisteners</name> 
-		<value>false</value> </property> <property> <name>listener</name> <value>org.uncommons.reportng.HTMLReporter, 
-		org.uncommons.reportng.JUnitXMLReporter</value> </property> </properties> 
-		<suiteXmlFiles> <suiteXmlFile>${testng.suiteFile}</suiteXmlFile> </suiteXmlFiles> 
-		</configuration> </plugin> <plugin> <groupId>org.apache.maven.plugins</groupId> 
-		<artifactId>maven-compiler-plugin</artifactId> <version>3.8.0</version> </plugin> 
-		</plugins> </build> -->
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.22.1</version>
+				<configuration>
+					<properties>
+						<property>
+							<name>usedefaultlisteners</name>
+							<value>false</value>
+						</property>
+						<property>
+							<name>listener</name>
+							<value>org.uncommons.reportng.HTMLReporter,
+								org.uncommons.reportng.JUnitXMLReporter</value>
+						</property>
+					</properties>
+					<suiteXmlFiles>
+						<suiteXmlFile>${testng.suiteFile}</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.0</version>
+			</plugin>
+		</plugins>
+	</build>
 </project>

@@ -42,7 +42,8 @@ public class GivenScenarioTest extends BaseTest {
 		userId = users.searchForGivenUserAndFetchUserId(username);
 
 		//assertTrue(userId > 0, "Given user does not exist in the system");
-		assertTrue(userId = 0, "Given user does not exist in the system");
+		assertTrue(userId == 0, "Given user does not exist in the system");
+		assert
 	}
 
 	@Test(dependsOnMethods = "searchForGivenUser")

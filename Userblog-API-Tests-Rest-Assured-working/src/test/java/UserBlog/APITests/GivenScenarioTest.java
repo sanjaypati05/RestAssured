@@ -43,7 +43,6 @@ public class GivenScenarioTest extends BaseTest {
 
 		//assertTrue(userId > 0, "Given user does not exist in the system");
 		assertTrue(userId == 0, "Given user does not exist in the system");
-		assert
 	}
 
 	@Test(dependsOnMethods = "searchForGivenUser")

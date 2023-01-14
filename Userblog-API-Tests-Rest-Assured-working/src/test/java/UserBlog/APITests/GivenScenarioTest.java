@@ -40,7 +40,7 @@ public class GivenScenarioTest extends BaseTest {
 	@Test(dependsOnMethods = "getUsersData", dataProvider = "username")
 	public void searchForGivenUser(String username) {
 		userId = users.searchForGivenUserAndFetchUserId(username);
-		assertTrue(userId == 0, "Given user does not exist in the system");
+		assertTrue(userId > 0, "Given user does not exist in the system");
 	}
 
 	@Test(dependsOnMethods = "searchForGivenUser")

@@ -10,4 +10,4 @@
             <class name="UserBlog.APITests.JsonSchemaValidationsTest" />
         </classes>
     </test>
-</suite>
+</suite>                                  
